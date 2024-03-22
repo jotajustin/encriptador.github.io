@@ -10,42 +10,44 @@
     <title>Encriptador y Desencriptador de Texto</title>
 </head>
 <body>
+    <section class="home">
     <header>
-    <video src="img/video-fondo.mp4" autoplay="true" muted="true" loop="true"></video>
-    <div class="cajatitulo">
-    <h1>Encriptador y Desencriptador de Texto</h1>
-</div>
+        <video src="img/video-fondo.mp4" autoplay="true" muted="true" loop="true"></video>
+        <div class="cajatitulo">
+            <h1>Encriptador y Desencriptador de Texto</h1>
+        </div>
     </header>
-<div class="texto1">
-    <label for="accion">¿Qué deseas hacer?: </label>
-    <select class="accion" id="accion">
-        <option value="encriptar">Encriptar</option>
-        <option value="desencriptar">Desencriptar</option>
-    </select>
-</div>
+    <div class="texto1">
+        <label for="accion">¿Qué deseas hacer?: </label>
+        <select class="accion" id="accion">
+            <option value="encriptar">Encriptar</option>
+            <option value="desencriptar">Desencriptar</option>
+        </select>
+    </div>
 
-<div class="container">
-<div class="caja1">
-    <textarea type="text" title="Solo se permitirán letras minúsculas y números" class= "texto" id="textareatexto" name="textareatexto" placeholder="Escriba acá su texto" oninput= validarTexto() ></textarea>
-</div>
+    <div class="container">
+        <div class="caja1">
+            <textarea type="text" title="Solo se permitirán letras minúsculas y números" class= "texto" id="textareatexto" name="textareatexto" placeholder="Escriba acá su texto" oninput= validarTexto() ></textarea>
+        </div>
 
-<div class="caja1">
-    <textarea readonly type="text" class="textores" id="texto-encriptado" placeholder="Aquí obtendrá sus resultados"></textarea>
-</div>
+        <div class="caja1">
+            <textarea readonly type="text" class="textores" id="texto-encriptado" placeholder="Aquí obtendrá sus resultados"></textarea>
+        </div>
+    </div>
+    <div class="cajaboton">
+        <button class="boton" onclick="ejecutarAccion()">Ejecutar</button>
+        <button id="botoncopy" class="boton" onclick="copiarTexto()">Copiar texto</button>
+    </div>
+    <br></br>  
+    </section>
+    <footer>
+        <p>&copy; Joseph Justiniano. Todos los derechos reservados.</p>
+        <p>Encriptador de texto</p>
+    </footer> 
 
-</div>
-<div class="cajaboton">
-    <button class="boton" onclick="ejecutarAccion()">Ejecutar</button>
-    <button id="botoncopy" class="boton" onclick="copiarTexto()">Copiar texto</button>
-</div>
-<br></br>  
-<footer>
-    <p>&copy; Joseph Justiniano. Todos los derechos reservados.</p>
-    <p>Encriptador de texto</p>
-</footer> 
-    <script src="app.js">
-    </script>
+    <script src="app.js"></script>
 </body>
+</html>
 
 
 
