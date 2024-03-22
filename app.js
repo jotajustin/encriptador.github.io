@@ -6,7 +6,7 @@ function validarTexto() {
     const textarea = document.getElementById("textareatexto");
     const errorMessage = document.querySelector(".error-message");
 
-    const regex = /[^a-zA-Z0-9\s]/;
+    const regex = /[^a-z\s;]/ig;
     
     if (regex.test(textarea.value)) {
         alert("Se han ingresado caracteres en mayúsculas o especiales. El campo de texto se borrará.");
